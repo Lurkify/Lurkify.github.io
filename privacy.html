@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Lurkify adatkezelése: platformkapcsolatok, YouTube-adatok, helyi tárolás, opcionális Chrome Sync és törlési lehetőségek.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <title>Adatvédelmi tájékoztató — Lurkify</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="en" href="privacy.en.html">
+</head>
+<body data-release-status="draft">
+  <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="index.html"><img src="logo.svg" alt="" width="42" height="42">Lurkify</a>
+    <nav aria-label="Fő navigáció"><a href="index.html">Főoldal</a><a href="index.html#contact">Kapcsolat</a><a href="privacy.en.html" lang="en" hreflang="en">English</a></nav>
+  </div></header>
+  <main id="main" class="shell reading">
+    <aside class="draft-notice">Jóváhagyandó tervezet, nem végleges adatvédelmi tájékoztató. Közzététel előtt szükséges a hatálybalépés és a teljes szöveg jóváhagyása, valamint az esetleges további adatkezelői adatok tisztázása.</aside>
+    <h1>Adatvédelmi tájékoztató</h1>
+    <div class="policy-facts"><p>Tervezet dátuma: <time datetime="2026-10-09">2026. október 9.</time> · Érintett bővítményverzió: 0.8.1</p><p>Fejlesztő: MrHB76 · Nyilvános kapcsolat: <a href="https://github.com/MrHB76">GitHub-profil</a>.</p></div>
+    <section aria-labelledby="purpose-title"><h2 id="purpose-title">1. Mire használ adatokat a Lurkify?</h2>
+      <p>A Lurkify Twitch-, YouTube- és Kick-csatornákat jelenít meg, kedvenceket és saját csatornákat kezel, és a beállításaid szerint streamfüleket nyithat, némíthat és zárhat be. Ehhez platformkapcsolati adatokat, csatornaazonosítókat, nyilvános streamadatokat, beállításokat és a kezelt streamfülek működési adatait használja.</p>
+      <p>A streamfülek URL-jét és állapotát az azonosításhoz, a duplikált megnyitások elkerüléséhez és az automatikus kezeléshez ellenőrzi. Nem gyűjt általános böngészési előzményeket.</p>
+    </section>
+    <section id="google-data" aria-labelledby="google-title"><h2 id="google-title">2. Google- és YouTube-adatok</h2>
+      <p>A Lurkify YouTube API Services szolgáltatásokat használ. Kapcsolódó dokumentumok: <a href="https://policies.google.com/privacy">Google adatvédelmi irányelvek</a> és <a href="https://www.youtube.com/t/terms">YouTube Általános Szerződési Feltételek</a>.</p>
+      <p>A Google-bejelentkezés választható. A kért <strong>youtube.readonly</strong> jogosultságot a YouTube-feliratkozások és csatornaprofil beolvasásához használjuk. A csatornaazonosítók, csatornanevek, profil-/avataradatok és a feliratkozott csatornák listája a bővítményben történő megjelenítést és streamellenőrzést szolgálják. Az importált lista és kapcsolódó gyorsítótár a böngésző helyi tárhelyére kerülhet.</p>
+      <p>A Lurkify nem módosítja a feliratkozásaidat, nem tölt fel vagy töröl videót, és nem ír hozzászólást ezen a kapcsolaton keresztül. A Google API-kból kapott adatokat nem értékesítjük, és nem használjuk személyre szabott reklámra. Kizárólag az itt ismertetett, felhasználó számára látható funkciókat szolgálják.</p>
+      <p>A Google-adatok használatát a Chrome Web Store adatkezelési szabályzatához, azon belül a Limited Use korlátozásaihoz igazítjuk. <a href="https://developer.chrome.com/docs/webstore/program-policies/policies#limited-use">Limited Use követelmények</a></p>
+      <p>A Fiókok oldali kijelentkezés törli az importált feliratkozásokat, a fiókprofilt, a kapcsolati állapotot és a kapcsolódó stream-/discovery-gyorsítótárakat. A kedvencek és a kézzel felvett csatornák megmaradnak. A bővítmény megpróbálja visszavonni a projekt Google-engedélyeit; ha ezt nem tudja igazolni, külön figyelmeztetést ad. A hozzáférés a <a href="https://security.google.com/settings/security/permissions">Google-fiók biztonsági beállításaiban is visszavonható</a>. A gyári visszaállítás önmagában nem vonja vissza a szolgáltatói engedélyeket, és nem törli az exportált fájlokat.</p>
+      <p>Az importált feliratkozási listát a háttérfolyamat 29 nap után megpróbálja frissíteni, ha a bővítmény és a YouTube-integráció engedélyezett. A 30 napos vagy igazolható frissítési dátum nélküli import nem használható tovább; a karbantartás törli. A fiókprofil és a stream-cache-ek lejáratát is ellenőrzi. A Home részleges frissítése nem hosszabbítja meg a többi profiladat megőrzését. A karbantartás böngészőinduláskor, workerinduláskor és időzített ébresztéskor működik; bezárt böngészőnél a következő induláskor tud takarítani. A saját/rejtett csatornákba másolt YouTube-profiladatokat 30 nap után, ismeretlen kor esetén vagy leválasztáskor eltávolítjuk; a mentett csatornaválasztások megmaradnak.</p>
+    </section>
+    <section aria-labelledby="storage-title"><h2 id="storage-title">3. Helyi tárolás és hitelesítő adatok</h2>
+      <ul>
+        <li>A beállítások, kedvencek, saját/rejtett csatornák, importált listák, profilok és gyorsítótáradatok a bővítmény böngészőbeli tárhelyén vannak.</li>
+        <li>A Twitch hozzáférési token, a saját YouTube API-kulcs és a Kick-alkalmazás Client ID/Client Secret adatai helyileg tárolódnak. Ez nem azonos egy titkosított jelszókezelővel.</li>
+        <li>A Chrome YouTube OAuth-tokenjét a Chrome Identity kezeli. A Brave webes OAuth-tokenje és a Kick ideiglenes App Access Token munkameneti tárhelyen van.</li>
+        <li>A hitelesítő adatokat az érintett platform hivatalos API-/hitelesítési végpontjaihoz használjuk. Köztes Lurkify-proxy nincs.</li>
+        <li>Hitelesítő adat nem része a beállításexportnak vagy a Cloud Syncnek. A naplózó a felismert érzékeny értékeket kitakarja; megosztás előtt a naplókat neked is ellenőrizned kell.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="history-title"><h2 id="history-title">4. Előzmények és diagnosztikai napló</h2>
+      <p>A History legfeljebb 500 munkamenetet őriz a kezelt streamfülekről. A befejezett munkamenetek 90 nap után kiesnek, a futók a befejezésig megmaradhatnak. A másolt YouTube-nevek, azonosítók és hivatkozások 30 nap után, ismeretlen kor esetén vagy leválasztáskor törlődnek; az időadatok megmaradnak. A helyi diagnosztikai napló legfeljebb 2000, 30 napnál fiatalabb eseményt tartalmazhat. Leválasztáskor a felismerhető YouTube-részleteket kitakarjuk, nem töröljük a teljes naplót. A régi, jelöletlen szöveges bejegyzések minden másolata nem azonosítható biztosan; ennek rendezése még kiadási feladat. Ezeket az adatokat a bővítmény nem küldi automatikusan a fejlesztőnek.</p>
+    </section>
+    <section aria-labelledby="sync-title"><h2 id="sync-title">5. Opcionális Chrome Sync</h2>
+      <p>A Cloud Sync alapértelmezés szerint ki van kapcsolva. Bekapcsolva kiválasztott beállítások és kedvenc csatornaazonosítók kerülnek a Google által kezelt Chrome-szinkronizálási tárhelyre. Ez nem saját Lurkify-felhő. Hitelesítő adatok és helyi diagnosztikai naplók nem tartoznak ide. Kikapcsoláskor a Lurkify törli a saját szinkronizálási rekordjait.</p>
+    </section>
+    <section aria-labelledby="external-title"><h2 id="external-title">6. Külső szolgáltatások és adatmegosztás</h2>
+      <p>A Twitch, Google/YouTube és Kick a hozzájuk irányuló kéréseket és a meglátogatott streamoldalakat saját szabályzataik szerint kezeli. Avatarok és előnézetek betöltése is külső platform-/képszolgáltatóhoz irányuló kérésekkel járhat.</p>
+      <p>A megnyitott platformoldalak saját szabályzataik szerint reklámokat jeleníthetnek meg, sütiket vagy hasonló böngészőtárhelyet használhatnak. A bővítmény a fent ismertetett böngészőbeli bővítménytárhelyet használja. Az exportált beállítások és naplók a saját kezelésedben lévő fájlok; ezeket a gyári visszaállítás nem távolítja el.</p>
+      <p>A Multi-Stream launcher kézi használatakor a kiválasztott Twitch-csatornanevek és YouTube-videóazonosítók a megnyitott multistream.me URL részévé válnak. A támogatási, dokumentációs és támogatói hivatkozások külső oldalakra vezetnek. Naplót csak akkor osztasz meg, ha azt te kézzel elküldöd vagy feltöltöd egy kiválasztott címzettnek.</p>
+    </section>
+    <section aria-labelledby="website-title"><h2 id="website-title">7. Ez a weboldal</h2>
+      <p>Az oldal statikus; nincs rajta bejelentkezés, analitika, reklámkövető, űrlap vagy saját sütit beállító kód. Nem olvassa ki a bővítmény tárhelyét és nem vesz át platformhitelesítő adatokat. A tervezett GitHub Pages-tárhely a webkiszolgáláshoz kapcsolódó technikai adatokat a GitHub saját szabályzata szerint kezelheti. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub adatvédelmi tájékoztató</a></p>
+    </section>
+    <section aria-labelledby="control-title"><h2 id="control-title">8. Törlés és kontroll</h2>
+      <p>Kikapcsolhatod az automatikus működést és a Cloud Syncet, megszüntetheted a platformkapcsolatokat, törölheted a befejezett History-elemeket és a naplókat, illetve gyári visszaállítással a bővítmény helyi és munkameneti adatait. A platformengedélyek a szolgáltatók fiókbeállításaiban is visszavonhatók. A bővítmény törlése nem törli a platformfiókjaidat.</p>
+      <p>Adatkezelési kérdéshez a véglegesítéskor jóváhagyott <a href="index.html#contact">kapcsolattartási csatorna</a> használható. Nyilvános GitHub-bejegyzésben ne küldj személyes vagy hitelesítő adatot.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><nav aria-label="Lábléc"><a href="index.html">Főoldal</a><a href="index.html#contact">Kapcsolat</a><a href="privacy.en.html" lang="en">English</a></nav><p class="footer-note">Jóváhagyandó tervezet · Lurkify</p></div></footer>
+</body>
+</html>

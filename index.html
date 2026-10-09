@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="Ak_EJOQAU0sR8zW3YfCiB4g4YT2cnSu3ITK-AH7gWXA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lurkify: Twitch-, YouTube- és Kick-streamek, kedvencek és automatikus streamfül-kezelés egy böngészőbővítményben.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <title>Lurkify — Streamek, egy helyen</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="en" href="en.html">
+</head>
+<body data-release-status="draft">
+  <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="" width="42" height="42">Lurkify</a>
+      <nav aria-label="Fő navigáció">
+        <a href="#features">Funkciók</a><a href="privacy.html">Adatvédelem</a><a href="#contact">Kapcsolat</a>
+        <a href="en.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <aside class="draft-notice">Előkészített változat. Az adatvédelmi tájékoztató végleges jóváhagyása és a nyilvános kiadás még folyamatban van.</aside>
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="eyebrow">Egy bővítmény. Három platform.</span>
+      <h1 id="hero-title">A kedvenc streamjeid.<br>Egy helyen.</h1>
+      <p class="lead">A Lurkify összegyűjti a Twitch-, YouTube- és Kick-csatornáidat, és a saját beállításaid szerint kezeli a megnyitott streamfüleket. Te választod ki, mit kövessen és mit automatizáljon.</p>
+      <div class="platforms" aria-label="Támogatott platformok"><span class="platform twitch">Twitch</span><span class="platform youtube">YouTube</span><span class="platform kick">Kick</span></div>
+      <div class="actions"><a class="button" href="#features">Mit tud a Lurkify?</a><a class="button secondary" href="privacy.html">Hogyan kezeli az adatokat?</a></div>
+      <p class="muted" style="margin-top: 18px">A Chrome Web Store-kiadás előkészítés alatt áll. Ez az oldal nem indít bejelentkezést és nem kér hozzáférési tokent.</p>
+    </section>
+    <section id="features" class="section" aria-labelledby="features-title">
+      <h2 id="features-title">Kevesebb kézi fülkezelés</h2>
+      <p class="muted">A funkciók a platform elérhető API-jaitól és lejátszófelületétől függnek.</p>
+      <div class="grid">
+        <article class="card"><h3>Csatornák és kedvencek</h3><p>Élő csatornák áttekintése, saját csatornák hozzáadása és külön kedvenclista. A Twitch-kapcsolat követett csatornákat, a YouTube-kapcsolat feliratkozásokat importálhat.</p></article>
+        <article class="card"><h3>Auto Lurker</h3><p>Kedvenc streamek automatikus megnyitása, füllimit, némítás, játékoshangerő és minőségbeállítás. Igazolt streamvég után a kezelt fülek automatikusan bezárhatók.</p></article>
+        <article class="card"><h3>Átlátható működés</h3><p>Élővé válási értesítések, lejátszóállapot, a kezelt streamek előzményei és helyi diagnosztikai napló. Az automatikus működés kikapcsolható.</p></article>
+      </div>
+    </section>
+    <section class="section reading" aria-labelledby="google-title">
+      <h2 id="google-title">Miért kér YouTube-hozzáférést?</h2>
+      <p>A választható Google-bejelentkezés a <strong>youtube.readonly</strong> jogosultságot kéri. A Lurkify ezt a YouTube-feliratkozások és a csatornaprofil beolvasásához használja, hogy a csatornákat a bővítményben megjelenítse és a streamjeiket ellenőrizhesse.</p>
+      <p>A bővítmény ezen a kapcsolaton keresztül nem iratkoztat fel vagy le, nem tölt fel videót, és nem ír hozzászólást. A nyilvános YouTube-csatornák API-kulccsal is beállíthatók; Twitch és Kick használatához nem kell Google-bejelentkezés.</p>
+      <p><a href="privacy.html#google-data">Google-adatok felhasználása és a hozzáférés visszavonása</a></p>
+    </section>
+    <section class="section reading" aria-labelledby="local-title">
+      <h2 id="local-title">Helyi beállítások. Közvetlen kapcsolatok.</h2>
+      <p>A beállítások és a működési adatok a böngészőben tárolódnak. A kikapcsolt alapállapotú Cloud Sync külön bekapcsolható a támogatott beállítások és kedvencek Chrome-szinkronizálásához. Nincs Lurkify-proxy vagy saját felhasználói fiókszerver.</p>
+      <p>A lejátszás a platformok és a böngésző szabályait követi. A Lurkify nem garantál nézettségi jóváírást, Drops-jutalmat vagy minden streamen azonos minőségi opciókat.</p>
+    </section>
+    <section id="contact" class="section reading" aria-labelledby="contact-title">
+      <h2 id="contact-title">Kapcsolat és támogatás</h2>
+      <p>Fejlesztő: <strong>MrHB76</strong>. Nyilvános kapcsolat: <a href="https://github.com/MrHB76">GitHub-profil</a>.</p>
+      <p>Kérjük, ne ossz meg OAuth-tokent, API-kulcsot, Kick Client Secretet vagy teljes bővítménytárhelyet. Egy nyilvános hibajegybe csak ellenőrzött, érzékeny adatoktól megtisztított napló kerüljön.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><nav aria-label="Lábléc"><a href="privacy.html">Adatvédelmi tájékoztató</a><a href="#contact">Kapcsolat</a><a href="en.html" lang="en">English</a></nav><p class="footer-note">A Lurkify független projekt; nem a Twitch, a Google/YouTube vagy a Kick hivatalos terméke.</p></div></footer>
+</body>
+</html>

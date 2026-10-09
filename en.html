@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lurkify brings Twitch, YouTube and Kick channels, favorites and automatic stream-tab management into one browser extension.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <title>Lurkify — Your streams, together</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="hu" href="index.html">
+</head>
+<body data-release-status="draft">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="en.html"><img src="logo.svg" alt="" width="42" height="42">Lurkify</a>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="privacy.en.html">Privacy</a><a href="#contact">Contact</a><a href="index.html" lang="hu" hreflang="hu">Magyar</a></nav>
+  </div></header>
+  <main id="main" class="shell">
+    <aside class="draft-notice">Prepared draft. Final privacy-policy approval and public release are still pending.</aside>
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="eyebrow">One extension. Three platforms.</span>
+      <h1 id="hero-title">Your favorite streams.<br>All together.</h1>
+      <p class="lead">Lurkify brings your Twitch, YouTube and Kick channels together and manages stream tabs according to your preferences. You choose what to follow and what to automate.</p>
+      <div class="platforms" aria-label="Supported platforms"><span class="platform twitch">Twitch</span><span class="platform youtube">YouTube</span><span class="platform kick">Kick</span></div>
+      <div class="actions"><a class="button" href="#features">Explore Lurkify</a><a class="button secondary" href="privacy.en.html">How your data is used</a></div>
+      <p class="muted" style="margin-top: 18px">The Chrome Web Store release is in preparation. This website does not initiate sign-in or ask for access tokens.</p>
+    </section>
+    <section id="features" class="section" aria-labelledby="features-title">
+      <h2 id="features-title">Less manual tab management</h2>
+      <p class="muted">Features depend on the APIs and player controls available on each platform.</p>
+      <div class="grid">
+        <article class="card"><h3>Channels and favorites</h3><p>Browse live channels, add custom channels and keep a separate favorites list. Twitch connections can import follows; YouTube connections can import subscriptions.</p></article>
+        <article class="card"><h3>Auto Lurker</h3><p>Automatically open favorite streams, limit managed tabs and set mute, player volume and quality preferences. Managed tabs can close after a confirmed stream ending.</p></article>
+        <article class="card"><h3>Visible activity</h3><p>Go-live notifications, player health, managed stream history and local diagnostic logs. Automatic actions can be switched off.</p></article>
+      </div>
+    </section>
+    <section class="section reading" aria-labelledby="google-title">
+      <h2 id="google-title">Why does Lurkify request YouTube access?</h2>
+      <p>Optional Google sign-in requests the <strong>youtube.readonly</strong> permission. Lurkify uses it to read YouTube subscriptions and the channel profile, display those channels in the extension and check their streams.</p>
+      <p>This connection does not subscribe or unsubscribe you, upload videos or post comments. Public YouTube channels can also be configured with an API key. Twitch and Kick do not require Google sign-in.</p>
+      <p><a href="privacy.en.html#google-data">Google data use and revoking access</a></p>
+    </section>
+    <section class="section reading" aria-labelledby="local-title">
+      <h2 id="local-title">Local preferences. Direct connections.</h2>
+      <p>Preferences and operational data are stored in your browser. Cloud Sync is off by default and can optionally sync supported settings and favorites through Chrome Sync. There is no Lurkify proxy or separate Lurkify user-account server.</p>
+      <p>Playback follows platform and browser policies. Lurkify does not guarantee view-count credit, Drops rewards or identical quality options on every stream.</p>
+    </section>
+    <section id="contact" class="section reading" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact and support</h2>
+      <p>Developer: <strong>MrHB76</strong>. Public contact: <a href="https://github.com/MrHB76">GitHub profile</a>.</p>
+      <p>Do not share OAuth tokens, API keys, Kick Client Secrets or the full extension storage. Review diagnostic logs and remove sensitive information before posting any public bug report.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><nav aria-label="Footer"><a href="privacy.en.html">Privacy policy</a><a href="#contact">Contact</a><a href="index.html" lang="hu">Magyar</a></nav><p class="footer-note">Lurkify is an independent project, not an official product of Twitch, Google/YouTube or Kick.</p></div></footer>
+</body>
+</html>

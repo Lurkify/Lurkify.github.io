@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lurkify privacy: platform connections, Google and YouTube data, local storage, optional Chrome Sync and deletion controls.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy policy — Lurkify</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="hu" href="privacy.html">
+</head>
+<body data-release-status="draft">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="en.html"><img src="logo.svg" alt="" width="42" height="42">Lurkify</a>
+    <nav aria-label="Main navigation"><a href="en.html">Home</a><a href="en.html#contact">Contact</a><a href="privacy.html" lang="hu" hreflang="hu">Magyar</a></nav>
+  </div></header>
+  <main id="main" class="shell reading">
+    <aside class="draft-notice">Draft for approval, not a final privacy policy. The effective date, complete text and any additional required controller details must be confirmed before publication.</aside>
+    <h1>Privacy policy</h1>
+    <div class="policy-facts"><p>Draft date: <time datetime="2026-10-09">9 October 2026</time> · Extension version: 0.8.1</p><p>Developer: MrHB76 · Public contact: <a href="https://github.com/MrHB76">GitHub profile</a>.</p></div>
+    <section aria-labelledby="purpose-title"><h2 id="purpose-title">1. Why Lurkify uses data</h2>
+      <p>Lurkify displays Twitch, YouTube and Kick channels, manages favorites and custom channels, and can open, mute and close stream tabs according to your settings. It uses platform connection data, channel identifiers, public stream information, preferences and operational data about managed stream tabs.</p>
+      <p>Stream-tab URLs and status are checked to identify tabs, prevent duplicate openings and perform automatic management. Lurkify does not collect general browsing history.</p>
+    </section>
+    <section id="google-data" aria-labelledby="google-title"><h2 id="google-title">2. Google and YouTube data</h2>
+      <p>Lurkify uses YouTube API Services. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+      <p>Google sign-in is optional. The requested <strong>youtube.readonly</strong> permission is used to read your YouTube subscriptions and channel profile. Channel IDs, names, profile/avatar information and the subscribed-channel list are used to display channels in the extension and check their streams. Imported lists and related caches may be stored locally in your browser.</p>
+      <p>Lurkify does not change your subscriptions, upload or delete videos, or post comments through this connection. Google API data is not sold or used for personalized advertising. It is used only for the user-facing features described here.</p>
+      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements. <a href="https://developer.chrome.com/docs/webstore/program-policies/policies#limited-use">Limited Use requirements</a></p>
+      <p>Disconnecting on the Accounts page deletes imported subscriptions, the account profile, connection state and related stream/discovery caches. Favorites and manually added channels remain. The extension attempts to revoke the project's Google permissions and displays a separate warning if revocation cannot be confirmed. You can also <a href="https://security.google.com/settings/security/permissions">revoke access in your Google Account</a>. Factory reset alone does not revoke provider permissions or delete exported files.</p>
+      <p>The background worker attempts to refresh the imported subscription list after 29 days when the extension and YouTube integration are enabled. Imports aged 30 days or lacking a trustworthy refresh date cannot be used and are deleted by maintenance. Account-profile and stream-cache expiry are also checked. Partial Home refreshes do not extend retention of the other profile data. Maintenance runs on browser startup, worker startup and scheduled wakeups; if the browser is closed, cleanup resumes when it next starts. Copied YouTube profiles in custom/hidden channels are removed after 30 days, when their age is unknown, or on disconnect. Saved channel selections remain.</p>
+    </section>
+    <section aria-labelledby="storage-title"><h2 id="storage-title">3. Local storage and credentials</h2>
+      <ul>
+        <li>Settings, favorites, custom/hidden channels, imported lists, profiles and caches are kept in the extension's browser storage.</li>
+        <li>The Twitch access token, your YouTube API key and your Kick app's Client ID/Client Secret are stored locally. Browser storage is not an encrypted password manager.</li>
+        <li>Chrome Identity manages the Chrome YouTube OAuth token. Brave's web OAuth token and Kick's temporary App Access Token are kept in session storage.</li>
+        <li>Credentials are used with the respective platform's official API/authentication endpoints. There is no intermediate Lurkify proxy.</li>
+        <li>Credentials are excluded from settings exports and Cloud Sync. The logger redacts recognized sensitive values; you should also review logs before sharing them.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="history-title"><h2 id="history-title">4. History and diagnostic logs</h2>
+      <p>History keeps at most 500 sessions for managed stream tabs. Completed sessions expire after 90 days; running sessions may remain until they end. Copied YouTube names, IDs and links are removed after 30 days, when their age is unknown, or on disconnect; session times remain. Local diagnostic logs may contain up to 2000 events less than 30 days old. On disconnect, identifiable YouTube details are redacted without deleting the entire log. Not every copy in legacy, unmarked free-text logs can be reliably identified; resolving this remains a pre-release task. The extension does not automatically send these records to the developer.</p>
+    </section>
+    <section aria-labelledby="sync-title"><h2 id="sync-title">5. Optional Chrome Sync</h2>
+      <p>Cloud Sync is off by default. When enabled, selected settings and favorite channel identifiers are placed in Chrome's synchronization storage, managed by Google. This is not a separate Lurkify cloud service. Credentials and local diagnostic logs are excluded. Turning it off removes Lurkify's own synchronization records.</p>
+    </section>
+    <section aria-labelledby="external-title"><h2 id="external-title">6. External services and sharing</h2>
+      <p>Twitch, Google/YouTube and Kick process requests and stream-page visits under their own policies. Loading avatars and previews may also make requests to external platform/image providers.</p>
+      <p>Opened platform pages may display advertisements and use cookies or similar browser storage under their own policies. The extension also uses browser extension storage as described above. Exported settings and logs are files under your control; factory reset does not remove those copies.</p>
+      <p>When you manually use the Multi-Stream launcher, selected Twitch channel names and YouTube video IDs become part of the opened multistream.me URL. Support, documentation and donation links lead to external websites. Logs are shared only if you manually send or upload them to a recipient you select.</p>
+    </section>
+    <section aria-labelledby="website-title"><h2 id="website-title">7. This website</h2>
+      <p>This is a static website with no sign-in, analytics, advertising trackers, forms or code setting its own cookies. It does not read extension storage or receive platform credentials. The proposed GitHub Pages host may process technical request data to serve the website under GitHub's own policies. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a></p>
+    </section>
+    <section aria-labelledby="control-title"><h2 id="control-title">8. Deletion and control</h2>
+      <p>You can turn off automatic actions and Cloud Sync, disconnect platform accounts, clear completed History entries and logs, and factory-reset the extension's local and session data. Platform permissions can also be revoked in the providers' account settings. Uninstalling the extension does not delete your platform accounts.</p>
+      <p>For privacy questions, use the <a href="en.html#contact">contact channel</a> approved when this policy is finalized. Do not post personal information or credentials in public GitHub reports.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><nav aria-label="Footer"><a href="en.html">Home</a><a href="en.html#contact">Contact</a><a href="privacy.html" lang="hu">Magyar</a></nav><p class="footer-note">Draft for approval · Lurkify</p></div></footer>
+</body>
+</html>
